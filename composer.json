@@ -1,0 +1,26 @@
+{
+    "name": "logicalgrape/paypal-ipn-laravel",
+    "description": "A PayPal IPN client for Laravel.",
+    "keywords": ["paypal", "ipn", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Roemmich",
+            "email": "chris@logicalgrape.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.*",
+        "mike182uk/paypal-ipn-listener": "v1.1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "LogicalGrape\\PayPalIpnLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
