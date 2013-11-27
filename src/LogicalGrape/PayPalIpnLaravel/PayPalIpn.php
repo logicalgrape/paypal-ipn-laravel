@@ -54,7 +54,7 @@ class PayPalIpn
      */
     public function getRequestHandler()
     {
-        $config = Config::get('logicalgrape/paypal-ipn-laravel::request_handler', 'auto');
+        $config = Config::get('paypal-ipn-laravel::request_handler', 'auto');
         if ($config == 'curl' || ($config == 'auto' && is_callable('curl_init'))) {
             return new CurlRequest(Input::all());
         } else {
@@ -69,7 +69,7 @@ class PayPalIpn
      */
     public function getEnvironment()
     {
-        return Config::get('logicalgrape/paypal-ipn-laravel::environment', 'production');
+        return Config::get('paypal-ipn-laravel::environment', 'production');
     }
 
     /**
@@ -79,7 +79,7 @@ class PayPalIpn
      */
     public function setEnvironment($environment)
     {
-        Config::get('logicalgrape/paypal-ipn-laravel::environment', $environment);
+        Config::set('paypal-ipn-laravel::environment', $environment);
     }
 
     /**
