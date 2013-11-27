@@ -2,6 +2,24 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * An Eloquent Model: 'LogicalGrape\PayPalIpnLaravel\Models\IpnOrderItem'
+ *
+ * @property integer $id
+ * @property integer $ipn_order_id
+ * @property string $item_name
+ * @property string $item_number
+ * @property string $quantity
+ * @property float $mc_gross
+ * @property float $mc_handling
+ * @property float $mc_shipping
+ * @property float $tax
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @property \Carbon\Carbon $deleted_at
+ * @property-read \LogicalGrape\PayPalIpnLaravel\Models\IpnOrder $order
+ * @property-read \Illuminate\Database\Eloquent\Collection|\LogicalGrape\PayPalIpnLaravel\Models\IpnOrderItemOption[] $options
+ */
 class IpnOrderItem extends Model
 {
 
