@@ -1,5 +1,5 @@
-PayPal IPN for Lavarel 4
-======================
+PayPal IPN for Laravel 4
+========================
 
 This package allows for the painless creation of a PayPal IPN listener in the Laravel 4 framework.
 
