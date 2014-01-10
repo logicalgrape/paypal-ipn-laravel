@@ -78,7 +78,7 @@ Example
 Create the controller PayPal will POST to
 
 ```bash
-$ php artisan controller:make IpnController --only=post
+$ php artisan controller:make IpnController --only=store
 ```
 
 Open the newly created controller and add the following to the store action
