@@ -34,7 +34,7 @@ class CreateIpnOrderItems extends Migration {
 	 */
 	public function down()
 	{
-	    Schema::dropTable('ipn_order_items');
+	    Schema::drop('ipn_order_items');
 	}
 
 }
